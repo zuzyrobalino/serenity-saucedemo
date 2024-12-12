@@ -24,3 +24,15 @@ Este proyecto implementa una prueba funcional automatizada (End-to-End) del fluj
 1. **Clonar el Repositorio**:
    ```bash
    git clone https://github.com/zuzyrobalino/serenity-saucedemo.git
+2. **Ir al directorio del proyecto**:
+   ```bash
+   cd serenity-saucedemo
+3. **copiar driver**:
+   ```bash
+   mvn clean verify
+4. **Ejecutar las pruebas**:
+   ```bash
+   mvn clean verify
+5. **Visualizar el reporte de resultados**:
+   Una vez finalizadas las pruebas, abre el archivo target/site/serenity/index.html en tu navegador para ver el reporte detallado
+      
