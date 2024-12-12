@@ -35,13 +35,29 @@
             <version>2.0.16</version>
             <scope>test</scope>
         </dependency>
-
-        <!--    <dependency>-->
-        <!--      <groupId>junit</groupId>-->
-        <!--      <artifactId>junit</artifactId>-->
-        <!--      <version>RELEASE</version>-->
-        <!--      <scope>test</scope>-->
-        <!--    </dependency>-->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.5.3</version>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.serenity-bdd.maven.plugins</groupId>
+                <artifactId>serenity-maven-plugin</artifactId>
+                <version>3.9.1</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

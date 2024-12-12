@@ -4,7 +4,7 @@ Feature: Flujo de compra
     When Agrego dos productos a carrito
     And Visualizo el carrito
     And Completo el formulario de compra
-    Then Debería ver la confirmación "THANK YOU FOR YOUR ORDER"
+    Then Deberia ver la confirmacion "Thank you for your order!"
 
   #EJERCICIO:
   #Realizar una prueba funcional automatizada (Prueba E2E) de un flujo de compra en la página
